@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="survey.css"/>
+</head>
+</html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<header>
+<h1 id="title" class="survey-form-start">Contrast Survey</h1>
+<p id="description">This is a survey for how much different colour combinations hurts user's eyes</p>
+</header>
+<body>
+<div id="questions">
+	<form id="survey-form">
+		<div class="Basic-info">
+		<label id="name-label" class="label">*Name: </label>
+		<input type="text" id="name" required placeholder="Enter your name here" class="entry-box" /> *This field is required<br />
+		<label id="email-label" class="label">*Email:  </label>
+		<input type="email" id="email" required placeholder="Enter your email here" class="entry-box" /> *This field is required
+	</div>
+	<div class="Questions">
+		<label id="number-label">How many hours a day, on average, do you look at a screen(computer, phone, etc)?</label>
+		<input id="number" class="number" required type="number" min="1" max="24" placeholder="Hours" />
+	</div>
+	<div class="checked">
+		<label class="checkboxes">What devices do you use normally? Check all that apply</label>
+		<div class="boxfield">
+			<ul id="checkboxList">
+			<li><input type="checkbox" id="computer" name="computer" value="computer">Computer</li>
+			<li><input type="checkbox"id="phone" name="phone" value="phone">Phone &nbsp; &nbsp;</li>
+			<li><input type="checkbox" name="TV" value="TV" >TV&nbsp; &nbsp; </li>
+			<li><input type="checkbox" name="console" value="console" >Portable Game Console</li>
+		</ul>
+		</div>
+	</div>
+	<div class="ouch">
+		<label id="last-question">On a scale of 1 to 10, with 1 being the lowest and 10 being the highest, how badly did the questions on this survey hurt your eyes?</label>
+		<input id="last-question-number" class="rating" type="number" min="1" max="10" placeholder="Rating" />
+	</div>
+	<div id="dropdownmenu">
+		<label class="dropdown">When do you usually look at a screen?</label>
+		<select id="dropdown">
+			<option id="default" selected disabled value>Select one</option>
+			<option id="morning">Morning</option>
+			<option id="midday">Midday</option>
+			<option id="afternoon">Afternoon</option>
+			<option id="evening">Evening</option>
+			<option id="night">Night</option>
+			<option id="allday">All day long</option>
+		</select>
+	</div>
+	<div class="difficulty">
+		<label id="difficult">Did you have any difficulty answering any of the questions due to the colors?</label>
+		<input type="radio" name="choice" value="yes" class="difficulty" id="yes">Yes   
+		<input type="radio" name="choice" value="no" class="difficulty" id="no"> No
+	</ul>
+</div>
+<div class="commentfield">
+	<label>Additional comments/suggestions</label>
+	<textarea placeholder="Enter Comments here" name="comments" rows="2" cols="20"></textarea> <br>
+	<button type="submit" onclick="alert('Thank you!')" id="submit">Submit
+</button>
+</form>
+</div>
+</body>

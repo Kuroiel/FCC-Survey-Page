@@ -42,39 +42,60 @@ margin-left: 10px;
 .commentfield * {
 	vertical-align: middle;
 }
-/*.boxfield * {
-	vertical-align: middle;
-	display: grid;
-	align-items: center;
-	text-align: left;
-	justify-content: center;
-
-}*/
-#checkboxList {
+/*#checkboxList {
 	overflow: hidden;
 	list-style: none;
 	align-self: center;
-}
-/*input[type="checkbox"] {
-	vertical-align: center;
-	position: relative;
 }*/
+input [type="checkbox"] {
+   width: 20px;
+    position: relative;
+    left: -100px;
+    vertical-align: middle;
+    	padding: -5px;
+	padding-bottom: -5px;
+	margin-top: -5px;
+}
+.box {
+	position: relative;
+	left: 40px;
+	margin-right: -130px;
+	z-index: 2;
+}
+.checkLabel {
+	   width: 200px;
+    position: relative;
+    left: 85px;
+    bottom: 22px;
+    display: inline-block;
+    vertical-align: middle;
+        	padding: -5px;
+	padding-bottom: -5px;
+	margin-top: -5px;
+}
+#computerLabel {
+	left: 100px;
+	top: 3px;
+	z-index: 1;
+}
+#phoneLabel {
+	left: 90px;
+	top: 3px;
+	z-index: 1;
+}
+#TVLabel {
+	left: 80px;
+	top: 3px;
+	z-index: 1;
+}
+#consoleLabel {
+	left: 145px;
+	top: 3px;
+	z-index: 1;
+}
 .rating {
 	width: 50px;
 }
-/*.checked label {
-	display: inline-block;
-	padding-right: 10px;
-	padding-left: 22px;
-	text-indent: -22px;
+#submit {
+	background-color: #FF66CC;
 }
-.checked input {
-	vertical-align: middle;
-}
-.checked label span {
-	vertical-align: middle;
-}
-#phone {
-	padding-right: 5px;
-	margin-right: 10px;
-}*/

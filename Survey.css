@@ -1,14 +1,15 @@
 html {
 	text-align: center;
-	/*background-color:rgb(221, 255, 0);*/
-	background-color: rgb(69, 69, 69);
+	background-color:rgb(221, 255, 0);
 }
 #description {
+	color: #FF99;
+}
+.survey-form-start {
 	color: white;
 }
 #survey-form {
-	background-color: rgb(169, 169,169);
-	/*background-color: rgb(102, 255, 255);*/
+	background-color: rgb(102, 255, 255);
 	max-width: 1000px;
 	align-content: center;
 	margin: auto;
@@ -33,26 +34,51 @@ input {
 .basic-info {
 	display: grid;
 }
+#name-label {
+	color: #5600FF;
+}
+#name {
+	color: #66FF66;
+	background-color: #FF66CC;
+	text-decoration-color: green;
+}
+#requiredText {
+	color: #FF0009;
+	background-color: #FF99;
+}
+#email-label {
+	color: #FFCC33;
+}
+#email {
+	background-color: #FC5A8D;
+	color: #000000;
+}
+#requiredText2 {
+	background-color: #391285;
+	color: #000000;
+}
+#number-label {
+	color: #FFFF66;
+}
 #no {
-margin-left: 10px;
+	margin-left: 10px;
+	color: #FF3399;
+	background-color: #FEBAAD;
 }
 .number {
 	width: 50px;
+	background-color: #FF3855;
+	color: #EE34D2;
 }
 .commentfield * {
 	vertical-align: middle;
 }
-/*#checkboxList {
-	overflow: hidden;
-	list-style: none;
-	align-self: center;
-}*/
 input [type="checkbox"] {
    width: 20px;
     position: relative;
     left: -100px;
     vertical-align: middle;
-    	padding: -5px;
+    padding: -5px;
 	padding-bottom: -5px;
 	margin-top: -5px;
 }
@@ -62,14 +88,17 @@ input [type="checkbox"] {
 	margin-right: -130px;
 	z-index: 2;
 }
+#checkboxLabel {
+	color: #66FF66;
+}
 .checkLabel {
-	   width: 200px;
+	width: 200px;
     position: relative;
     left: 85px;
     bottom: 22px;
     display: inline-block;
     vertical-align: middle;
-        	padding: -5px;
+    padding: -5px;
 	padding-bottom: -5px;
 	margin-top: -5px;
 }
@@ -77,25 +106,48 @@ input [type="checkbox"] {
 	left: 100px;
 	top: 3px;
 	z-index: 1;
+	color: #FF6EFF;
 }
 #phoneLabel {
 	left: 90px;
 	top: 3px;
 	z-index: 1;
+	color: #FF0009;
 }
 #TVLabel {
 	left: 80px;
 	top: 3px;
 	z-index: 1;
+	color: #EE34D2;
 }
 #consoleLabel {
 	left: 145px;
 	top: 3px;
 	z-index: 1;
+	color: #FD5B78;
+}
+#last-question {
+	color: #50BFE6;
 }
 .rating {
 	width: 50px;
+	background-color: #FF9933;
+	color: #FFEB00;
+}
+.dropdown {
+	color: #00CC99;
+}
+#difficult {
+	color: #47ABCC;
+}
+.commentLabel {
+	color: #FFCBA4;
+}
+.commentBox {
+	background-color: #FBE870;
+	color: #BEE64B;
 }
 #submit {
 	background-color: #FF66CC;
+	color: #00FF00;
 }

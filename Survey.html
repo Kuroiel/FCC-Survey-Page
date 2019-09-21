@@ -16,18 +16,17 @@
 	<form id="survey-form">
 		<div class="Basic-info">
 		<label id="name-label" class="label">*Name: </label>
-		<input type="text" id="name" required placeholder="Enter your name here" class="entry-box" /> *This field is required<br />
+		<input type="text" id="name" required placeholder="Enter your name here" class="entry-box"> <label id="requiredText">*This field is required<br /></label>
 		<label id="email-label" class="label">*Email:  </label>
-		<input type="email" id="email" required placeholder="Enter your email here" class="entry-box" /> *This field is required
+		<input type="email" id="email" required placeholder="Enter your email here" class="entry-box" /> <label id="requiredText2">*This field is required</label>
 	</div>
 	<div class="Questions">
 		<label id="number-label">How many hours a day, on average, do you look at a screen(computer, phone, etc)?</label>
 		<input id="number" class="number" required type="number" min="1" max="24" placeholder="Hours" />
 	</div>
 	<div class="checked">
-		<label class="checkboxes">What devices do you use normally? Check all that apply</label>
+		<label class="checkboxes" id="checkboxLabel">What devices do you use normally? Check all that apply</label>
 		<div class="boxfield">
-			<!--<ul id="checkboxList">-->
 		<input type="checkbox" id="computer" name="computer" value="computer" class="box">
 		<label id="computerLabel" class="checkLabel" >Computer</label>
 		<input type="checkbox"id="phone" name="phone" value="phone" class="box">
@@ -62,8 +61,8 @@
 	</ul>
 </div>
 <div class="commentfield">
-	<label>Additional comments/suggestions</label>
-	<textarea placeholder="Enter Comments here" name="comments" rows="2" cols="20"></textarea> <br>
+	<label class="commentLabel">Additional comments/suggestions: </label>
+	<textarea placeholder="Enter Comments here" name="comments" rows="2" cols="20" class="commentBox"></textarea> <br>
 	<button type="submit" onclick="alert('Thank you!')" id="submit">Submit
 </button>
 </form>

@@ -10,29 +10,20 @@ html {
 }
 #survey-form {
 	background-color: rgb(102, 255, 255);
-	max-width: 1000px;
+	width: 1000px;
 	align-content: center;
 	margin: auto;
 	padding: 15px;
 	border-radius: 5px;
-	height: auto;
-	max-height: 1500px;
 }
 .required {
 	color: red;
 	padding: 5px;
 }
-label {
-	padding: 5px;
-	padding-bottom: 5px;
-}
 input {
 	padding: 5px;
 	padding-bottom: 5px;
 	margin-top: 5px;
-}
-.basic-info {
-	display: grid;
 }
 #name-label {
 	color: #5600FF;
@@ -61,7 +52,6 @@ input {
 	color: #FFFF66;
 }
 #no {
-	margin-left: 10px;
 	color: #FF3399;
 	background-color: #FEBAAD;
 }
@@ -72,15 +62,6 @@ input {
 }
 .commentfield * {
 	vertical-align: middle;
-}
-input [type="checkbox"] {
-   width: 20px;
-    position: relative;
-    left: -100px;
-    vertical-align: middle;
-    padding: -5px;
-	padding-bottom: -5px;
-	margin-top: -5px;
 }
 .box {
 	position: relative;
@@ -97,10 +78,6 @@ input [type="checkbox"] {
     left: 85px;
     bottom: 22px;
     display: inline-block;
-    vertical-align: middle;
-    padding: -5px;
-	padding-bottom: -5px;
-	margin-top: -5px;
 }
 #computerLabel {
 	left: 100px;
